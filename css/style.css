@@ -181,7 +181,7 @@ a:focus, a:hover {
 
 
 /* Home section */
-#home {
+#home, #announcements{
   color: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -196,8 +196,15 @@ a:focus, a:hover {
   overflow: hidden;
   position: relative;
 }
+#announcements h2{
+color: white;
+  }
+#announcements a{
+background-color: #505050;
+color: white;
+  }
 
-#home .gradient-overlay {
+#home .background{
   background: #1D1E1E; /* fallback for old browsers */  
   /*background: -webkit-linear-gradient(to left, #93CC73 , #595959); 
   background: linear-gradient(to left, #93CC73 , #595959); */
@@ -208,7 +215,7 @@ a:focus, a:hover {
   height: 100vh;
 }
 
-#home .btn {
+#home .btn, #announcements .btn {
   background: transparent;
   border: 3px solid #ffffff;
   color: #ffffff;
@@ -219,14 +226,16 @@ a:focus, a:hover {
   text-transform: uppercase;
 }
 #home .btn:hover,
-#home .btn:focus {
+#home .btn:focus,
+#announcements .btn:hover,
+#announcements .btn:focus {
   color: #93CC73;
 }
 
-#home .announcements {
-  background: #93CC73; /* fallback for old browsers */  
-  /*background: -webkit-linear-gradient(to left, #93CC73 , #595959); 
-  background: linear-gradient(to left, #93CC73 , #595959); */
+#announcements .gradient-overlay {
+  background: #505050; /* fallback for old browsers */  
+  background: -webkit-linear-gradient(to top, #93CC73 , #505050); 
+  background: linear-gradient(to top, #93CC73 , #505050); 
   position: absolute;
   top: 0;
   width: 100%;
@@ -259,6 +268,9 @@ a:focus, a:hover {
     transition: all 0.4s ease-in-out;
     letter-spacing: 3px;
     text-transform: uppercase;
+}
+.navbar-default .navbar-nav .signup {
+    color: #ffffff;
 }
 
 .navbar-default .navbar-nav > li a:hover {
