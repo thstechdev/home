@@ -233,15 +233,31 @@ color: white;
 }
 
 #announcements .gradient-overlay {
-  background: #505050; /* fallback for old browsers */  
-  background: -webkit-linear-gradient(to top, #93CC73 , #505050); 
-  background: linear-gradient(to top, #93CC73 , #505050); 
+  background: linear-gradient(270deg, #96e091, #75e7eb, #af9af4, #e29af4);
+  background-size: 800% 800%;
+  -webkit-animation: gradientanimated 44s ease infinite;
+  -moz-animation: gradientanimated 44s ease infinite;
+  animation: gradientanimated 44s ease infinite;
   position: absolute;
   top: 0;
   width: 100%;
   height: 100vh;
 }
-
+@-webkit-keyframes gradientanimated {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradientanimated {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradientanimated { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 /* Navigation section */
 .navbar-default {
     background: #1D1E1E;
