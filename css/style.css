@@ -614,13 +614,22 @@ footer strong {
   color: #ffffff;
 }
 
-
+.navbarimg {
+  height: 50px;
+}
 
 /* Mobile Responsive */
 @media (max-width: 980px) {
 
   #home {
     height: 65vh;
+  }
+  #announcements {
+    height: 100%;
+  }
+  
+  #home .img{
+    width: 80%;
   }
 
   #feature .col-md-4:last-child,
@@ -637,6 +646,10 @@ footer strong {
     margin-top: 20px;
   }
 
+  .navbarimg {
+    width: 150px;
+    height: auto;
+  }
 }
 
 
@@ -697,7 +710,7 @@ footer strong {
 
   #about,
   #feature,
-  #video,
+  #announcements,
   #menu,
   #team,
   #gallery,
