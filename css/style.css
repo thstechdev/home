@@ -649,6 +649,10 @@ footer strong {
   .navbarimg {
     width: 150px;
     height: auto;
+    padding-top: 10px;
+  }
+  .navbar-default .navbar-nav li a {
+    font-size: 15px;
   }
 }
 
@@ -656,7 +660,6 @@ footer strong {
 @media (max-width: 900px) {
 
   h1 {font-size: 70px;}
-
 }
 
 
@@ -669,6 +672,12 @@ footer strong {
 }
 
 @media (max-width: 767px) {
+
+  .navbarimg {
+    width: 160px;
+    height: auto;
+    padding: 0px 10px;
+  }
 
   .navbar-default .navbar-brand {
     line-height: 15px;
